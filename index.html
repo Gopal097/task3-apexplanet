@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Dashboard</h1>
+            <p class="description">Get real-time weather information and forecasts</p>
+        </header>
+
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="Enter city name...">
+                <button class="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </div>
+
+        <div class="current-weather">
+            <div class="weather-card">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <div class="weather-details">
+                        <div class="temperature">25°C</div>
+                        <div class="description">Sunny</div>
+                        <div class="location">New York, US</div>
+                    </div>
+                </div>
+                <div class="weather-stats">
+                    <div class="stat">
+                        <div class="label">Humidity</div>
+                        <div class="value">65%</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Wind Speed</div>
+                        <div class="value">5.5 km/h</div>
+                    </div>
+                    <div class="stat">
+                        <div class="label">Pressure</div>
+                        <div class="value">1015 hPa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h2>5-Day Forecast</h2>
+            <div class="forecast-cards">
+                <div class="forecast-card">
+                    <div class="day">Mon</div>
+                    <div class="forecast-icon"><i class="fas fa-sun"></i></div>
+                    <div class="forecast-temp">26°C</div>
+                </div>
+                <div class="forecast-card">
+                    <div class="day">Tue</div>
+                    <div class="forecast-icon"><i class="fas fa-cloud-sun"></i></div>
+                    <div class="forecast-temp">24°C</div>
+                </div>
+                <div class="forecast-card">
+                    <div class="day">Wed</div>
+                    <div class="forecast-icon"><i class="fas fa-cloud-rain"></i></div>
+                    <div class="forecast-temp">20°C</div>
+                </div>
+                <div class="forecast-card">
+                    <div class="day">Thu</div>
+                    <div class="forecast-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="forecast-temp">22°C</div>
+                </div>
+                <div class="forecast-card">
+                    <div class="day">Fri</div>
+                    <div class="forecast-icon"><i class="fas fa-sun"></i></div>
+                    <div class="forecast-temp">25°C</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="unit-toggle">
+            <button class="unit-btn active" data-unit="celsius">°C</button>
+            <button class="unit-btn" data-unit="fahrenheit">°F</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
